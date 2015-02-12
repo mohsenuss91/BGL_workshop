@@ -1,7 +1,9 @@
 #include <boost/graph/adjacency_list.hpp>
 using namespace boost;
+
 typedef property<edge_weight_t, int> EdgeWeightProperty;
-typedef boost::adjacency_list<listS, vecS, directedS, no_property,EdgeWeightProperty > mygraph;
+typedef boost::adjacency_list < listS, vecS, undirectedS, no_property, EdgeWeightProperty> mygraph;
+
 int main()
 {
 mygraph g;
