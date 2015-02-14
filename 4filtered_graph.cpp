@@ -4,7 +4,7 @@
 #include <boost/graph/graph_utility.hpp>
 using namespace boost;
 using namespace std;
-//In this example we will filter a graph's edges based on edge weight. We will keep all edges with positive edge weight. 
+//In this example we will  keep only edges with positive edge weight. 
 //First, we create a predicate function object.
 
 //"typename" is used for specifying that a dependent name in a template definition or declaration is a type.
@@ -55,9 +55,6 @@ int main()
 
   cout << "filtered edge set: ";
   print_edges(fg, name);
-
-  cout << "filtered out-edges:" << endl;
-  print_graph(fg, name);
 
   return 0;
 }
